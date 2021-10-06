@@ -2,52 +2,57 @@
 using namespace std;
 int main (){
 
-    const double tax= ;
+    const double tax_rate = 0.12, philhealth = 150, SSS = 250, Pagibig = 200;
 
-    string Name,employee_num,payday; 
+    string name, employee_num, payday, employee_status;
     int rate; 
     int hour;
     double gross;
-    int SSS;
-    int Philhealth;
-    int Pagibig;
+
 
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
     cout.precision(2);
+   
+    cout << " Enter Your Name         : ";
+    getline(cin,name);  
 
-    cout << " Enter Your Name  : ";
-    getline(cin,Name);
-
-    cout << " Emplyoyee Number : ";
+    cout << " Emplyoyee Number        : ";
     getline(cin,employee_num);
 
-    cout << " Date of Payday   :";
+    cout << " Date of Payday          : ";
     getline(cin,payday);
 
-    cout << "\n===================================\n";
+    cout << "\n===============================================\n";
 
-    cout << " Hourly pay rate : ";
+    cout << " Hourly pay rate         : ";
     cin >> rate;
 
-    cout << " Hours worked    :";
+    cout << " Hours worked            : ";
     cin >> hour;
 
-    cout << "\n===================================\n";
 
-    cout << " Payroll summary for : " << Name << endl;
+    cout << "\n===============================================\n";
 
-    cout << " Employee Number     : " << employee_num << endl;
+    cout << " Payroll summary for     : " << name << endl;
 
-    cout << " Payroll date        : " << payday << endl;
+    cout << " Employee Number         : " << employee_num << endl;
 
-    cout << "\n===================================\n";
+    cout << " Payroll date            : " << payday << endl;
 
-    cout << " You earned " << hour << " at " << rate << "per hour" << endl;
-    cout << " Gross Pay  :       " << (rate*hour) << "php" << endl;
-    //cout << " W";
+    cout << "\n===============================================\n";
 
 
+    cout << " You earned " << hour << " at " << rate << " per hour" << endl;
+    cout << " Gross Pay                 " << (rate*hour) << "php" << endl;
+    cout << " Philhealth                " << (philhealth) << "php" << endl;
+    cout << " SSS                       " << (SSS) << "php" <<  endl;
+    cout << " Pagibig                   " << (Pagibig) << "php" << endl;
+    cout << " Withholding               " << ((rate*hour) * 0.12 ) << "php" << endl;
+    cout << "\n===============================================\n";
+    cout << " NET PAY                   " << ((rate * hour) - (( rate * hour ) * 0.12) - SSS - philhealth - Pagibig ) << "php" << endl; 
+    cout << " Employee status           ";
+    cin >> employee_status; 
 
 
     return 0;
