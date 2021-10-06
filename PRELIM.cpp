@@ -44,7 +44,7 @@ int main (){
     cout << "\n===================================\n";
 
     cout << " You earned " << hour << " at " << rate << "per hour" << endl;
-    cout << " Gross Pay  :        " << (rate*hour) << "php" << endl;
+    cout << " Gross Pay  :       " << (rate*hour) << "php" << endl;
     //cout << " W";
 
 
