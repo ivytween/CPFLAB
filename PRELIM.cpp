@@ -1,8 +1,14 @@
+// Chelsie Ivy U. Dela Cruz
+// Prelim Exam 
+// September 06, 2021
+
+
+
 #include <iostream> 
 using namespace std;
 int main (){
 
-    const double tax_rate = 0.12, philhealth = 150, SSS = 250, Pagibig = 200;
+    const double tax_rate = 0.12, philhealth = 150, SSS = 250, Pagibig = 200; 
 
     string name, employee_num, payday, employee_status;
     int rate; 
