@@ -55,7 +55,7 @@ int main (){
                 cout << " ";
             }
         }
-        cout << endl    QQ                                                                                          ;
+        cout << endl                                                                                           ;
     }
 
     return 0;
